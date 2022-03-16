@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>QUIZ GAME</h1>
+        <P>Game of Capitals</P>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1 - Which it is the capital of Italy?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> Turín
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"> Nápoles
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Roma
+            </label>
+        </section>
+        <section id="p1">
+            <h3>2 - Which it is the capital of Norway?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Tromsø
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1,this)"> Oslo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Bergen
+            </label>
+        </section>
+        <section id="p2">
+            <h3>3 - Which it is the capital of Peru?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> Titicaca
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> La Paz
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> Lima
+            </label>
+        </section>
+        <section id="p3">
+            <h3>4 - Which it is the capital of Sweden?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Gotemburdo
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3,this)"> Estocolmo
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Lund
+            </label>
+        </section>
+        <section id="p4">
+            <h3>5 - Which it is the capital of Canada?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4,this)"> Candberra
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Toronto
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Ottawa
+            </label>
+        </section>
+
+        <button onclick="corregir()">Find Out</button>
+        <h2>Right Amount: <span id="resultado"></span></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
